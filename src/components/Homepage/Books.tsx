@@ -6,10 +6,11 @@ import Link from "next/link";
 const getBooks = async () => {
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_SEVER_SIDE_URL}/booksData.json`,
+      `${process.env.NEXT_PUBLIC_SERVER_SIDE_URL}/booksData.json`,
     );
     return res.json();
-  } catch {
+  } catch (err){
+    console.error(err)
     throw new Error("Data fetching failed");
     return [];
   }
