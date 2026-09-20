@@ -9,7 +9,6 @@ const getBooks = async () => {
     return res.json();
   } catch (err){
     console.error(err)
-    throw new Error("Data fetching failed");
     return [];
   }
 };
