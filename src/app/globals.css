@@ -1,0 +1,8 @@
+@import "tailwindcss";
+/* css-languageservice-disable-next-line unknownAtRules */
+@plugin "daisyui";
+
+@theme {
+  --font-work-sans: var(--font-work-sans);
+  --font-playfair: var(--font-playfair);
+}
